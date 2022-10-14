@@ -1,5 +1,5 @@
 async function getPosts() {
-    const response = await fetch('https://my-json-server.typicode.com/NIKFED/json-server/posts');
+    const response = await fetch('http://local.api.posts.ru/posts');
     const posts = await response.json();
 
     posts.forEach((post) => {
